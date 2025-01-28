@@ -6,7 +6,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background: url('img/') no-repeat center center fixed;
+    background: url('img/wallpaper-background-several-transparent-circles-small.jpg') no-repeat center center fixed;
 }
 
 .Header {
@@ -212,7 +212,8 @@ body {
     }
 
     .into .apa, .into .kenapa {
-        width: 10%; /* Menggunakan persentase agar lebih fleksibel */
+        width: 10%;
+        font-size:1rem;
         max-width: 600px; /* Membatasi ukuran maksimum */
         margin: 10px auto;
         margin-left:10px;/* Margin otomatis untuk centering */

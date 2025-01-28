@@ -210,10 +210,10 @@ body {
     }
 
     .into .apa, .into .kenapa {
-        width: 72vh;
-        margin-bottom: 20px;
+        width: 90%; /* Menggunakan persentase agar lebih fleksibel */
+        max-width: 600px; /* Membatasi ukuran maksimum */
+        margin: 10px auto; /* Margin otomatis untuk centering */
         text-align: center;
-        margin-left: 10px;
     }
 
     .into img {
@@ -226,14 +226,6 @@ body {
 
 
 }
-    @media screen and (min-width: 550px) {
-        .into .apa, .into .kenapa {
-            width: 55vh;
-            margin-bottom: 20px;
-            text-align: center;
-            margin-left: 10px;
-        }
-     }
 .founder {
     display: flex;
     align-items: center;

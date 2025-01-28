@@ -212,11 +212,13 @@ body {
     }
 
     .into .apa, .into .kenapa {
-        width:70%;
-        max-width: 600px; /* Membatasi ukuran maksimum */
+        width: 70%;
+        font-size:1rem;
+        max-width: 100%; /* Membatasi ukuran maksimum */
         margin: 10px auto;
-        margin-left:10px;/* Margin otomatis untuk centering */
+        margin-left:20px;/* Margin otomatis untuk centering */
         text-align: center;
+        margin-top: -8px;
     }
 
     .into img {

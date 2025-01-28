@@ -1,9 +1,6 @@
 html {
     scroll-behavior: smooth;
 }
-* {
-    box-sizing: border-box; /* Memastikan padding dan border dihitung dalam ukuran elemen */
-}
 
 body {
     margin: 0;
@@ -210,17 +207,15 @@ body {
         flex-direction: column;
         margin-left: 0;
         width: 100%;
-        padding: 0 10px; /* Memberikan sedikit ruang di kiri dan kanan untuk menghindari elemen keluar layar */
     }
 
     .into .apa, .into .kenapa {
-        width: 100%; /* Memastikan elemen mengikuti lebar penuh layar */
-        max-width: 600px; /* Batasi ukuran maksimum */
+        width: 90%;  /* Gunakan persentase agar lebih fleksibel */
+        max-width: 600px;  /* Batasi ukuran maksimum */
         margin-bottom: 20px;
         text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 10px; /* Menambahkan sedikit padding untuk estetika */
+        margin-left: auto;  /* Menempatkan elemen di tengah */
+        margin-right: auto; /* Menempatkan elemen di tengah */
     }
 
     .into img {

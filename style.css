@@ -6,7 +6,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: hsl(0, 0%, 99%);
+    background: url('img/') no-repeat center center fixed;
 }
 
 .Header {
@@ -69,10 +69,12 @@ body {
     z-index: 1000;
     background: linear-gradient(135deg, #681fad, #843de0);
     text-align: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 10px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: -10px;
+    width: 100%;
+
 }
 
 .navbar button {
@@ -210,7 +212,7 @@ body {
     }
 
     .into .apa, .into .kenapa {
-        width: 50%; /* Menggunakan persentase agar lebih fleksibel */
+        width: 90%; /* Menggunakan persentase agar lebih fleksibel */
         max-width: 600px; /* Membatasi ukuran maksimum */
         margin: 10px auto; /* Margin otomatis untuk centering */
         text-align: center;
@@ -222,10 +224,69 @@ body {
     }
 
 
-
-
-
 }
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: linear-gradient(135deg, #681fad, #843de0);
+    text-align: center;
+    justify-content: space-between;
+    padding: 10px 20px; /* Atur padding kiri dan kanan agar tidak keluar */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: -10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box; /* Pastikan padding dan border tidak menambah lebar navbar */
+}
+
+.navbar .menu {
+    display: flex;
+    gap: 1rem;
+    margin-left: auto;
+}
+
+.navbar .hamburger {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px; /* Hilangkan padding kanan-kiri ekstra */
+    }
+
+    .navbar .hamburger {
+        display: block;
+    }
+
+    .navbar .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        padding: 0; /* Pastikan tidak ada padding yang menyebabkan masalah */
+        margin: 0;  /* Menghilangkan margin tambahan */
+    }
+
+    .navbar .menu.active {
+        display: flex;
+    }
+
+    .navbar button {
+        width: 100%;
+        padding: 12px 16px;
+        font-size: 1rem;
+        box-sizing: border-box; /* Pastikan lebar tombol sesuai dengan ukuran navbar */
+    }
+}
+
+
 .founder {
     display: flex;
     align-items: center;
@@ -306,7 +367,7 @@ body {
 
     .team-member {
         display: inline-block;
-        width: 100px;
+        width: 200px;
         margin: 15px;
         text-align: center;
         background-color: #ffffff;
@@ -669,11 +730,15 @@ blockquote footer {
     }
 
     .informasi ul li {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
         padding: 10px 5px;
         padding-right: 10px;
         
     }
+    .informasi a{
+        font-size: 0.7rem;
+    }
+
 }
 
 .carousel {

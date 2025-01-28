@@ -210,15 +210,17 @@ body {
         flex-direction: column;
         margin-left: 0;
         width: 100%;
+        padding: 0 10px; /* Memberikan sedikit ruang di kiri dan kanan untuk menghindari elemen keluar layar */
     }
 
     .into .apa, .into .kenapa {
-        width: 50%;  /* Gunakan persentase agar lebih fleksibel */
-        max-width: 600px;  /* Batasi ukuran maksimum */
+        width: 100%; /* Memastikan elemen mengikuti lebar penuh layar */
+        max-width: 600px; /* Batasi ukuran maksimum */
         margin-bottom: 20px;
         text-align: center;
-        margin-left: 10px;  /* Menempatkan elemen di tengah */
-        margin-right: 10px; /* Menempatkan elemen di tengah */
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px; /* Menambahkan sedikit padding untuk estetika */
     }
 
     .into img {

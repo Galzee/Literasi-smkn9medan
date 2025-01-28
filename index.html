@@ -15,8 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Atma:wght@300;400;500;600;700&family=Barriecito&family=Delius&family=DynaPuff:wght@400..700&family=Electrolize&family=Flavors&family=Imperial+Script&family=Jersey+10&family=Matemasie&family=Signika+Negative:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    
-        <style>
+    <style>
         body{
             background: url('img/wallpaper-background-several-transparent-circles-small.jpg') no-repeat center center fixed;
         }
@@ -35,10 +34,16 @@
 
     <!--NAVBAR-->
     <div class="navbar">
-        <a href="#home"><button>HOME</button></a>
-        <a href="#profile"><button>PROFILE</button></a>
-        <a href="#information"><button>INFORMATION</button></a>
-        <a href="#contact"><button>CONTACT</button></a>
+        <button class="hamburger" onclick="toggleMenu()">
+            &#9776; <!-- Hamburger icon (tiga garis) -->
+        </button>
+        <div class="menu">
+            <a href="#home"><button>HOME</button></a>
+            <a href="#profile"><button>PROFILE</button></a>
+            <a href="#information"><button>INFORMATION</button></a>
+            <a href="#contact"><button>CONTACT</button></a>
+        </div>
+
     </div>
 
     <!--HOME2-->
@@ -259,6 +264,11 @@ nextButton.addEventListener("click", () => {
     updateCarousel();
 });
 
+function toggleMenu() {
+        const menu = document.querySelector('.navbar .menu');
+        menu.classList.toggle('active'); // Toggle class 'active' untuk menampilkan/menyembunyikan menu
+    }
+    
 // Menangani resize agar responsif
 window.addEventListener("resize", updateCarousel);
 
@@ -267,6 +277,7 @@ window.addEventListener("resize", updateCarousel);
       <script>
         AOS.init();
       </script>
+
 </body>
 
 </html>

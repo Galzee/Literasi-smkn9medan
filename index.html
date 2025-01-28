@@ -34,16 +34,10 @@
 
     <!--NAVBAR-->
     <div class="navbar">
-        <button class="hamburger" onclick="toggleMenu()">
-            &#9776; <!-- Hamburger icon (tiga garis) -->
-        </button>
-        <div class="menu">
-            <a href="#home"><button>HOME</button></a>
-            <a href="#profile"><button>PROFILE</button></a>
-            <a href="#information"><button>INFORMATION</button></a>
-            <a href="#contact"><button>CONTACT</button></a>
-        </div>
-
+        <a href="#home"><button>HOME</button></a>
+        <a href="#profile"><button>PROFILE</button></a>
+        <a href="#information"><button>INFORMATION</button></a>
+        <a href="#contact"><button>CONTACT</button></a>
     </div>
 
     <!--HOME2-->
@@ -53,12 +47,12 @@
                 <h2 data-aos="fade-up">SELAMAT DATANG DI EKSKUL LITERASI SMKN 9 MEDAN</h2>
             </div>
             <div class="into">
-                <div data-aos="fade-up-right" class="apa">
+                <div data-aos="zoom-in" class="apa">
                     <h2 data-aos="fade-up">APA ITU EKSKUL LITERASI?</h2>
                     <p data-aos="fade-up">Ekskul Literasi adalah singkatan dari Ekstrakurikuler Literasi. Ekskul ini berfokus pada kegiatan yang berkaitan dengan pengembangan kemampuan literasi, yang meliputi membaca, menulis, dan memahami berbagai jenis teks. Tujuan utama dari ekskul literasi adalah untuk meningkatkan kemampuan siswa dalam berbagai aspek literasi, baik itu dalam membaca, menulis kreatif, atau memahami informasi dari berbagai sumber.</p>
                 </div>
                 <div data-aos="fade-up" class="img1"><img width="300vh" src="img/rbt.png" alt=""></div>
-                <div data-aos="fade-up-left" class="kenapa">
+                <div data-aos="zoom-in" class="kenapa">
                     <h2 data-aos="fade-up">KENAPA HARUS EKSKUL LITERASI?</h2>
                     <p data-aos="fade-up">Biar ga dikatain -1 literasi awoakwoak.</p>
                 </div>
@@ -96,7 +90,7 @@
                 <h4>Rizky</h4>
                 <p>Sekretaris</p>
             </div>
-            <div data-aos="fade-up-left" class="team-member">
+            <div data-aos="zoom-in" class="team-member">
                 <img src="img/rbt.png" alt="Foto Sekretaris">
                 <h4>Tiara</h4>
                 <p>Bendahara</p>
@@ -138,7 +132,7 @@
 
     <!--INFORMATION PAGE-->
 
-            <div data-aos="fade-up" id="information" class="informasi">
+            <div data-aos="zoom-in" id="information" class="informasi">
                 <h2>Informasi Ekskul Literasi</h2>
                 <p>
                     Ekskul Literasi di SMKN 9 Medan menyediakan berbagai kegiatan yang menarik untuk
@@ -155,15 +149,15 @@
                 </div>
                 
                 <ul>
-                    <li data-aos="fade-right"><i class="fas fa-book"></i> Diskusi Buku Mingguan</li>
-                    <li data-aos="fade-up"><i class="fas fa-pen-fancy"></i> Workshop Menulis Kreatif</li>
-                    <li data-aos="fade-left"><i class="fas fa-trophy"></i> Lomba Menulis Cerpen dan Puisi</li>
-                    <li data-aos="fade-up-right"><i class="fas fa-newspaper"></i> Penerbitan Antologi Siswa</li>
-                    <li data-aos="fade-up-left"><i class="fas fa-nkey"></i> Kegiatan mengetik novel</li>
+                    <li data-aos="zoom-in"><i class="fas fa-book"></i> Diskusi Buku Mingguan</li>
+                    <li data-aos="zoom-in"><i class="fas fa-pen-fancy"></i> Workshop Menulis Kreatif</li>
+                    <li data-aos="zoom-in"><i class="fas fa-trophy"></i> Lomba Menulis Cerpen dan Puisi</li>
+                    <li data-aos="zoom-in"><i class="fas fa-newspaper"></i> Penerbitan Antologi Siswa</li>
+                    <li data-aos="zoom-in"><i class="fas fa-nkey"></i> Kegiatan mengetik novel</li>
                 </ul>
                 <a data-aos="fade-up" href="cara.html">Lihat Cara Bergabung</a>
             </div>
-    <div data-aos="flip-down" class="testimonials">
+    <div data-aos="zoom-in" class="testimonials">
         <h3>What People Say About Us</h3>
         <blockquote>
             <p>"Ekskul literasi telah membantu saya lebih percaya diri dalam menulis dan berbicara di depan umum. Terima kasih, Kak Samuel!"</p>
@@ -264,11 +258,6 @@ nextButton.addEventListener("click", () => {
     updateCarousel();
 });
 
-function toggleMenu() {
-        const menu = document.querySelector('.navbar .menu');
-        menu.classList.toggle('active'); // Toggle class 'active' untuk menampilkan/menyembunyikan menu
-    }
-    
 // Menangani resize agar responsif
 window.addEventListener("resize", updateCarousel);
 
@@ -277,7 +266,6 @@ window.addEventListener("resize", updateCarousel);
       <script>
         AOS.init();
       </script>
-
 </body>
 
 </html>

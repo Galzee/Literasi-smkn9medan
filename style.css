@@ -210,12 +210,12 @@ body {
     }
 
     .into .apa, .into .kenapa {
-        width: 90%;  /* Gunakan persentase agar lebih fleksibel */
+        width: 8%;  /* Gunakan persentase agar lebih fleksibel */
         max-width: 600px;  /* Batasi ukuran maksimum */
         margin-bottom: 20px;
         text-align: center;
-        margin-left: auto;  /* Menempatkan elemen di tengah */
-        margin-right: auto; /* Menempatkan elemen di tengah */
+        margin-left: 10px;  /* Menempatkan elemen di tengah */
+        margin-right: 10px; /* Menempatkan elemen di tengah */
     }
 
     .into img {

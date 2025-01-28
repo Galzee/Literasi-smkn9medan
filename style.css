@@ -1,6 +1,9 @@
 html {
     scroll-behavior: smooth;
 }
+* {
+    box-sizing: border-box; /* Memastikan padding dan border dihitung dalam ukuran elemen */
+}
 
 body {
     margin: 0;

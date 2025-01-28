@@ -226,6 +226,14 @@ body {
 
 
 }
+    @media screen and (min-width: 550px) {
+        .into .apa, .into .kenapa {
+            width: 55vh;
+            margin-bottom: 20px;
+            text-align: center;
+            margin-left: 10px;
+        }
+     }
 .founder {
     display: flex;
     align-items: center;

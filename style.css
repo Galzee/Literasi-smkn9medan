@@ -214,7 +214,8 @@ body {
     .into .apa, .into .kenapa {
         width: 10%; /* Menggunakan persentase agar lebih fleksibel */
         max-width: 600px; /* Membatasi ukuran maksimum */
-        margin: 10px auto; /* Margin otomatis untuk centering */
+        margin: 10px auto;
+        margin-left:10px;/* Margin otomatis untuk centering */
         text-align: center;
     }
 

@@ -179,7 +179,7 @@ body {
         font-size: 8vw;
     }
 
-    .img1{
+    .img1 {
         width: 0vh;
         height: 0px;
     }
@@ -210,28 +210,20 @@ body {
     }
 
     .into .apa, .into .kenapa {
-        width: 20vh;
+        width: 90%;  /* Gunakan persentase agar lebih fleksibel */
+        max-width: 600px;  /* Batasi ukuran maksimum */
         margin-bottom: 20px;
         text-align: center;
-        margin-left: 10px;
+        margin-left: auto;  /* Menempatkan elemen di tengah */
+        margin-right: auto; /* Menempatkan elemen di tengah */
     }
 
     .into img {
         width: 100%;
         margin-top: 10px;
     }
-
-    @media screen and (min-width: 550px) {
-        .into .apa, .into .kenapa {
-            width: 60vh;
-            margin-bottom: 20px;
-            text-align: center;
-            margin-left: 10px;
-        }
-     }
-
-
 }
+
 .founder {
     display: flex;
     align-items: center;
